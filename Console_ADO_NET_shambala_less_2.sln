@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console_ADO_NET_shambala_less_2", "Console_ADO_NET_shambala_less_2.csproj", "{407DE85B-1539-4F6B-A8A6-E3344FF81A51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{407DE85B-1539-4F6B-A8A6-E3344FF81A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407DE85B-1539-4F6B-A8A6-E3344FF81A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407DE85B-1539-4F6B-A8A6-E3344FF81A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407DE85B-1539-4F6B-A8A6-E3344FF81A51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7399361-BFDC-409F-A331-34C65B5E017C}
+	EndGlobalSection
+EndGlobal
