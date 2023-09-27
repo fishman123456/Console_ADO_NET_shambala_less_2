@@ -160,7 +160,7 @@ namespace ConsoleApp1
                 connection?.Close();    // закрыть соединение (если != null)
             }
         }
-        // 7. процедура обновления записи в таблице
+        // 7. процедура изменения записи в таблице
         static void UpdateRow(int id, string newName, int newReleasedIn, decimal newPrice)
         {
             SqlConnection connection = null;
@@ -176,7 +176,7 @@ namespace ConsoleApp1
                 // FROM[computer_game_db].[dbo].[game_t]
                 string cmdString =
                     $"update game_t set name_f ='{newName}'," +
-                    $"released_in_f ={newReleasedIn}" +
+                    $"released_in_f ={newReleasedIn}," +
                     $"price_f ={newPrice} " +
                     $"where id ={id};";
                 SqlCommand cmd = new SqlCommand(cmdString, connection);
@@ -202,12 +202,12 @@ namespace ConsoleApp1
                 Console.WriteLine("Connections close");
             }
         }
-
+      
         static void Main(string[] arg)
         {
-             InsertRow("redalert", 2001, 950);
+            // InsertRow("redalert", 2001, 950);
             //DeleteRow(6);
-            UpdateRow(9, "redalert", 2001, 950);
+            UpdateRow(8,"imperio",2000,25);
             SelectAllRows();
 
         }
