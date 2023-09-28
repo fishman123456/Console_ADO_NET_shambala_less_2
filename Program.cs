@@ -14,9 +14,16 @@ namespace ConsoleApp1
         static SqlConnection OpenDbConnection()
         {
             // обработка исключений будет выполняться выше по стеку
+            // база данных дома
+            /*string connectionString = @"Data Source=fishman\SQLEXPRESS;
+                                    Initial Catalog=computer_game_db;
+                                   Integrated Security=SSPI;";
+            */
+            // база данных на работе
             string connectionString = @"Data Source=fishman\SQLEXPRESS;
                                     Initial Catalog=computer_game_db;
                                     Integrated Security=SSPI;";
+
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             return connection;
@@ -206,9 +213,15 @@ namespace ConsoleApp1
         static void Main(string[] arg)
         {
             // InsertRow("redalert", 2001, 950);
-            //DeleteRow(6);
-            UpdateRow(8,"imperio",2000,25);
+            for (int i = 4; i < 10; i++) 
+            {
+                DeleteRow(i);
+            }
+            //DeleteRow(4);
+            
+            //UpdateRow(2,"imperio",2000,25);
             SelectAllRows();
+            //SelectRowById(1);
 
         }
     }
